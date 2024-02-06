@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+.button{
+    border: none;
+    background:linear-gradient(to right,#0067ac,rgb(196, 189, 189));
+    border-radius: 1rem;
+    height: 2rem;
+    width: 30%;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: 2vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+header h1 span{
+    color: #0067ac;
+    margin: 2vh 0;
+}
+header .sub-menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+header .sub-menu img{
+    height: 1rem;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 38%;
+    margin-top: 2vh;
+}
+.one{
+    display: flex;
+    justify-content: space-around;
+}
+.one .left h1{
+    color: #666666;
+    font-size: 1.5rem;
+}
+.one .left h3{
+    font-weight: lighter;
+    font-size: 1rem;
+}
+.one .left .feature{
+    display: flex;
+    align-items: center;
+    margin: 2vh 0;
+}
+.one .left .feature img{
+    height: 2rem;
+}
+.one .left .feature p{
+    font-size: 0.7rem;
+    margin-left: 1rem;
+}
+.one .right img{
+    height: 18rem;
+    margin-top: 3rem;
+    border-radius: 14px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+
+}
+section .one img{
+    height: 21rem;
+    width: 80%;
+    margin-left: 1.5rem;
+    border-radius: 0.3rem;
+}
+section h3{
+    margin-top: 1.5rem;
+}
+section p{
+    color: #666666;
+    margin-top: 1rem;
+} 
+section .two .button{
+    width: 70%;
+    margin-top: 2rem;
+}
+.three{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.three .offers{
+    display: flex;
+    margin-top: 1rem;
+}
+.three h3{
+    font-size: 1.5rem;
+}
+.three .offers .offer h4{
+    font-size: 1.5rem;
+}
+.three .offer img{
+    height: auto;
+    width: 10%;
+}
+.three .offers .offer p{
+    font-size: 1rem;
+}
+.four{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.four h4{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+.four h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.four .foods{
+    display: flex;
+    flex-direction: row;
+}
+.four .foods .food{
+    border: 1px solid gray;
+    border-radius: 12px;
+    margin: 8px;
+}
+.four .foods .food img{
+    height: auto;
+    width: 40%;
+    margin-top: 8px;
+}
+.four .foods .food p{
+    font-weight: bolder;
+}
+.four spam{
+    color:#0067ac;
+}
+.four .foods .price h5{
+    color: darkred;
+    font-size: 1.5rem;
+}
+.four .button{
+    height: 3rem;
+    width: auto;
+}
+footer .special-offer{
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 16px;
+}
+footer .special-offer h4{
+    font-size: 3rem;
+}
+footer .input input{
+    border-radius: 12px;
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+}
+footer .footer-button{
+    border-radius: 12px;
+    background-color: #666666;
+    color: white;
+    height: 2rem;
+    width: 20%;
+}
+ footer .details{
+    background: linear-gradient(to bottom ,white,blue);
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+footer .details .detail ul{
+    list-style: none;
+}
+footer .details .detail h4{
+    font-size: 1.2rem; 
+}
+footer .details .detail img{
+    height: 3rem;
+}
+@media screen and (max-width :765px){
+    .one {
+        flex-direction: column;
+    }
+    .one .left{
+        margin-left: 1rem;
+    }
+    .one .right{
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        width: 50%;
+    }
+    .one .right img{
+        height: 15rem;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    section .one img{
+        margin: 1rem;
+        width: 80%;
+        align-items: center;
+    }
+    section .two{
+        margin-left: 1rem;
+    }
+    section .two .button{
+        text-align: center;
+        width: 100%;
+    }
+    .three .offers{
+        display: flex;
+        flex-direction: column;
+    }
+    .four .foods{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10rem;
+        width: 50%;
+    }
+    .four .foods spam{
+        margin-top: 0.5rem;
+    }
+    .four .button{
+        text-align: center;
+       width: auto;
+    }
+    footer .details{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    footer .detailss img{
+         display: flex;
+         text-align: center;
+    }
+}
+@media screen and (max-width :320px){
+    header h1{
+        font-size: 20px;
+        margin-left: 3rem;
+    }
+    header .sub-menu ul li{
+        font-size: 10px;
+    }
+    .one .right img{
+        height: 10rem;
+    }
+    .four h3{
+        font-size: 20px;
+    }
+    .four .foods{
+        margin-left: 5rem;
+        width: auto;
+    }
+    footer .special-offer h4{
+        font-size: 20px;
+    }
+    footer .footer-button{
+        width: 40%;
+    }
+    
+}
